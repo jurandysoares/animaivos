@@ -60,6 +60,7 @@ mouse_.gif
     Escolha sua opção: 5
 >>> cena_demo()
 >>> fala(gato, "Oi!", distancia=50, angulo=135, tempo=1)
+>>> habilita_clique()
 >>> turtle.exitonclick()
 >>> exit()
 ```

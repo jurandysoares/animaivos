@@ -62,3 +62,24 @@ def carrega_img_fundo(img_fundo: str):
         print(cam_img_fundo.as_posix())
         print('Imagem de fundo não encontrada!')
 
+
+def exibir_coordenadas(x: float, y: float) -> None:
+    """Exibe as coordenadas de um clique do mouse.
+    """
+
+    print(f"Coordenadas do clique: x={x:0.0f}, y={y:0.0f}")
+    
+    # Exibe as coordenadas na tela com o turtle
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
+    turtle.write(f"({x:0.0f}, {y:0.0f})", font=("Arial", 12, "normal"))
+    turtle.stamp()
+
+def habilita_clique() -> None:
+    """Habilita o clique do mouse na tela.
+    """
+
+    tela = turtle.Screen()
+    tela.title("Clique para ver as coordenadas do mouse")
+    tela.onclick(exibir_coordenadas)

@@ -33,3 +33,33 @@ Faça uma animação que atenda aos seguintes requisitos:
    Execute: `git config --global user.email "usuario@dominio"`
 
 5. Listar as configurações novamente conforme passo 3.
+
+## Execução interativa
+
+```
+$ python -i main.py 
+Os seguintes personagens foram carregados:
+_cat.gif
+_elephant.gif
+_mouse.gif
+cat_.gif
+elephant_.gif
+mouse_.gif
+
+    Animação de Fulano, Beltrano e Sicrano
+    ======================================
+
+    Listagem de cenas:
+
+       1. Cena 1
+       2. Cena 2
+       3. Cena 3
+       4. Cena 4
+       5. Sair
+
+    Escolha sua opção: 5
+>>> cena_demo()
+>>> fala(gato, "Oi!", distancia=50, angulo=135, tempo=1)
+>>> turtle.exitonclick()
+>>> exit()
+```

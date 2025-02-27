@@ -2,43 +2,17 @@
 
 Bem-vindo ao repositório do projeto Animaivos!
 
-## Descrição
+# Animação final
 
-O projeto Animaivos é uma aplicação desenvolvida para fazer animações [...].
+Faça uma animação que atenda aos seguintes requisitos:
 
-## Funcionalidades
+1. Ter 4 cenas com fundos distintos e que tenham obstáculos
+2. Ter 2 ou mais personagens por cenas
+3. Cada cena deverá ser implementada em uma função com nome mnemônico
+4. A animação deverá ser feita no módulo `turtle` do Python
+5. Pelo menos uma das cenas deve contemplar:
 
-- asdfasdf
-
-## Tecnologias Utilizadas
-
-- Linguagem de Programação: Python
-- Biblioteca: turtle
-
-## Como Executar o Projeto
-
-1. Clone o repositório:
-    ```bash
-    git clone https://gitea.mange.ifrn.edu.br/MATRICULA/animaivos.git
-    ```
-2. Navegue até o diretório do projeto:
-    ```bash
-    cd animaivos
-    ```
-
-3. Execute o arquivo principal da animação:
-    ```bash
-    python main.py
-    ```
-
-## Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e enviar pull requests.
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## Contato
-
-Para mais informações, entre em contato com [NOME.SOBRENOME@escolar.ifrn.edu.br](NOME.SOBRENOME@escolar.ifrn.edu.br).
+   1. Repetição 3 ou mais vezes com laço `while`
+   2. Condição com `if`/`elif`/`else`
+   3. Seguir instruções de um arquivo
+   4. Ter diálogo com 10 falas

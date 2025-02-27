@@ -41,7 +41,7 @@ def fala(personagem: turtle.Turtle,
     balao.goto(x, y)   
     balao.left(angulo)
     balao.forward(distancia)
-    balao.write(fala)
+    balao.write(texto)
     time.sleep(tempo)
     balao.undo()
     balao.undo()

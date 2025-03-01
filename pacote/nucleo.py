@@ -38,7 +38,9 @@ def fala(personagem: turtle.Turtle,
     """
     
     x,y = personagem.pos()
-    balao.goto(x, y)   
+    balao.up()
+    balao.goto(x, y)
+    balao.down()
     balao.left(angulo)
     balao.forward(distancia)
     balao.write(texto)

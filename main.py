@@ -22,6 +22,8 @@ def cena_demo():
 
     # O gato será visto em todo o programa
     global gato
+    global rato
+
     gato = turtle.Turtle(shape="_cat.gif")
     gato.up()
     fala(gato, "Olá!")
@@ -29,6 +31,15 @@ def cena_demo():
     gato.goto(-MEIA_LARG, 0)
     gato.shape("cat_.gif")
     gato.goto(0, 0)
+
+    rato = turtle.Turtle(shape="mouse_.gif")
+    rato.up()
+    fala(rato, "Olá!")
+    fala(rato, "Estou no centro da imagem.")
+    rato.goto(+MEIA_LARG, 0)
+    rato.shape("_mouse.gif")
+    rato.goto(0, 0)
+
     
 # Renomei a função seguindo o padrao <cena_descricao_breve_cena>
 def cena1():

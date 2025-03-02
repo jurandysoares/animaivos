@@ -1,0 +1,41 @@
+site_name: Animai-vos!
+theme:
+  # name: readthedocs
+  name: material
+  language: pt
+  palette:
+    primary: "blue"
+    accent: "light-blue"
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          inventories:
+            - https://installer.readthedocs.io/en/stable/objects.inv
+
+nav:
+  - Início: index.md
+  - main:
+
+      - main/index.md
+      - main/main.md
+      - main/cena4.md
+      - main/cena1.md
+      - main/cena2.md
+      - main/cena3.md
+      - main/cena_demo.md
+
+  - animaivos:
+
+    - animaivos/menus.md
+    - nucleo:
+  
+        - animaivos/nucleo/index.md
+        - animaivos/nucleo/habilita_clique.md
+        - animaivos/nucleo/fala.md
+        - animaivos/nucleo/carrega_img_fundo.md
+        - animaivos/nucleo/carrega_personagens.md
+        - animaivos/nucleo/index.md
+        - animaivos/nucleo/exibir_coordenadas.md

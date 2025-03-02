@@ -13,8 +13,8 @@ balao.down()
 def carrega_personagens():
     """Carrega os personagens da animação.
 
-    Carrega os personagens da animação, que são arquivos .gif
-    presentes no diretório 'personagens' do pacote.
+    Carrega os personagens da animação, que são arquivos `.gif`
+    presentes no diretório `animaivos/personagens/`.
     """
 
     cam_personagens = Path(__file__).parent / "personagens"
@@ -35,6 +35,13 @@ def fala(personagem: turtle.Turtle,
 
     Exibe um balão de fala para um personagem, com o texto
     passado como parâmetro, em um ângulo e distância específicos.
+
+    Args:
+        personagem (turtle.Turtle): Um objeto da classe `turtle.Turtle` que representa um personagem.
+        texto (str): O texto que será exibido no balão de fala.
+        angulo (int, optional): O ângulo em graus no sentido em que será desenhada uma linha. Valor padrão: 45.
+        distancia (int, optional): Distância em pixels na qual será desenhada a linha. Valor padrão: 150.
+        tempo (float, optional): Tempo de exibição do texto. Valor padrão: 5.
     """
     
     x,y = personagem.pos()
@@ -52,8 +59,11 @@ def fala(personagem: turtle.Turtle,
 def carrega_img_fundo(img_fundo: str):
     """Carrega uma imagem de fundo para a tela.
 
-    Carrega uma imagem de fundo para a tela, que é um arquivo .gif
-    presente no diretório 'fundos' do pacote.
+    Carrega uma imagem de fundo para a tela, que é um arquivo `.gif`
+    ou um arquivo `.png` presente no diretório `animaivos/fundos/`.
+
+    Args:
+        img_fundo (str): Imagem de plano de fundo que será carregada.
     """
 
     cam_img_fundo = Path(__file__).parent / "fundos" / img_fundo
@@ -67,6 +77,10 @@ def carrega_img_fundo(img_fundo: str):
 
 def exibir_coordenadas(x: float, y: float) -> None:
     """Exibe as coordenadas de um clique do mouse.
+
+    Args:
+        x (float): Coordenada `x` do clique do mouse.
+        y (float): Coordenada `y` do clique do mouse.
     """
 
     print(f"Coordenadas do clique: x={x:0.0f}, y={y:0.0f}")
@@ -75,7 +89,7 @@ def exibir_coordenadas(x: float, y: float) -> None:
     turtle.penup()
     turtle.goto(x, y)
     turtle.pendown()
-    turtle.write(f"({x:0.0f}, {y:0.0f})", font=("Arial", 12, "normal"))
+    turtle.write(f"x={x:0.0f}, y={y:0.0f}", align="center")
     turtle.stamp()
 
 def habilita_clique() -> None:

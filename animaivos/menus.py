@@ -1,3 +1,5 @@
+"""Menus do pacote animaivos."""
+
 menu_principal = """\
 
     Animação de Fulano, Beltrano e Sicrano

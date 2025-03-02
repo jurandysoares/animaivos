@@ -4,10 +4,10 @@ Módulo principal
 
 import turtle
 
-from pacote.nucleo import carrega_img_fundo, carrega_personagens, fala, habilita_clique
+from animaivos.nucleo import carrega_img_fundo, carrega_personagens, fala, habilita_clique
 
 # Do módulo menus, do pacote ______, import o menu_principal
-from pacote.menus import menu_principal
+from animaivos.menus import menu_principal
 
 def cena_demo():
     """Cena de demonstração."""

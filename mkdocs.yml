@@ -1,13 +1,39 @@
 site_name: Animai-vos!
+site_author: Jurandy Soares
+site_description: "Documentação do projeto Animai-vos!"
+site_url: https://jurandysoares.github.io/animaivos/
+
+repo_url: https://github.com/jurandysoares/animaivos
+edit_uri: edit/main/docs/
+
 theme:
-  # name: readthedocs
   name: material
   language: pt
+  features:
+    - content.action.edit
+    - content.action.view
+
+  icon:
+    edit: material/pencil 
+    view: material/eye
+
   palette:
     primary: "blue"
     accent: "light-blue"
 
+markdown_extensions:
+  - footnotes
+  - pymdownx.emoji
+  - pymdownx.tasklist
+  - pymdownx.superfences
+  - pymdownx.magiclink
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+
 plugins:
+  # - git-authors
   - search
   - mkdocstrings:
       handlers:
@@ -37,5 +63,4 @@ nav:
         - animaivos/nucleo/fala.md
         - animaivos/nucleo/carrega_img_fundo.md
         - animaivos/nucleo/carrega_personagens.md
-        - animaivos/nucleo/index.md
         - animaivos/nucleo/exibir_coordenadas.md

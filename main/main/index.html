@@ -814,7 +814,9 @@
 
             <details class="quote">
               <summary>Source code in <code>main.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">74</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
 <span class="normal">75</span>
 <span class="normal">76</span>
 <span class="normal">77</span>
@@ -831,15 +833,13 @@
 <span class="normal">88</span>
 <span class="normal">89</span>
 <span class="normal">90</span>
-<span class="normal">91</span>
-<span class="normal">92</span>
-<span class="normal">93</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
-    <span class="n">carrega_personagens</span><span class="p">()</span>    
+<span class="normal">91</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+    <span class="n">animaivos</span><span class="o">.</span><span class="n">nucleo</span><span class="o">.</span><span class="n">carrega_personagens</span><span class="p">()</span>    
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Os seguintes personagens foram carregados:&quot;</span><span class="p">)</span>
     <span class="n">formas_gif</span> <span class="o">=</span> <span class="p">[</span><span class="n">forma</span> <span class="k">for</span> <span class="n">forma</span> <span class="ow">in</span> <span class="n">turtle</span><span class="o">.</span><span class="n">getshapes</span><span class="p">()</span> <span class="k">if</span> <span class="n">forma</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.gif&#39;</span><span class="p">)]</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">formas_gif</span><span class="p">))</span>
 
-    <span class="n">op</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="n">menu_principal</span><span class="p">))</span>
+    <span class="n">op</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="n">animaivos</span><span class="o">.</span><span class="n">menus</span><span class="o">.</span><span class="n">menu_principal</span><span class="p">))</span>
     <span class="k">while</span> <span class="n">op</span> <span class="o">!=</span> <span class="mi">5</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">op</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
             <span class="n">cena1</span><span class="p">()</span>
@@ -852,7 +852,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Opção inválida.&quot;</span><span class="p">)</span>
 
-        <span class="n">op</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="n">menu_principal</span><span class="p">))</span>
+        <span class="n">op</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="n">animaivos</span><span class="o">.</span><span class="n">menus</span><span class="o">.</span><span class="n">menu_principal</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
